@@ -10,7 +10,7 @@ const mongoURI = 'mongodb+srv://sschlege:PassworD1@marketplace.dmjqreo.mongodb.n
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true, // Use new server discover and monitoring engine
+  useUnifiedTopology: true,
 })
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));
